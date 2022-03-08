@@ -69,6 +69,7 @@ int main() {
 				i -= column + 1;
 				currentLine++;
 			}
+			
 			//현재 줄이 3이상일때 구분선 표시 및 현재 줄 0설정
 			else{
 				for(j = 0; j < seperateCount; j++)
