@@ -34,6 +34,8 @@ int main() {
 	big = data[big]; //최댓값으로 바꿔줌
 	small = data[small]; //최솟값으로 바꿔줌
 	
+	
+	
 	//출력
 	for(i = 0; i < lineInput; i++)
 		printf("%6d",i + 1);
