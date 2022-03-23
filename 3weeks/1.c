@@ -15,8 +15,8 @@
 반환값: n의 제곱 long long 형
 */
 
-long long algorithm1(int n){
-  int sum = n * n;
+long long algorithm1(long long n){
+  long long sum = n * n;
   return sum;
 }
 /*
@@ -26,8 +26,8 @@ long long algorithm1(int n){
   n -> 숫자를 입력받아 제곱을 출력해준다.
 반환값: n의 제곱 long long형
 */
-long long algorithm2(int n){
-  int sum = 0;
+long long algorithm2(long long n){
+  long long sum = 0;
   for(int i = 0; i < n; i++){
     sum = sum + n;
   }
@@ -40,8 +40,8 @@ long long algorithm2(int n){
   n -> 숫자를 입력받아 제곱을 출력해준다.
 반환값: n의 제곱 long long 형
 */
-long long algorithm3(int n){
-  int sum = 0;
+long long algorithm3(long long n){
+  long long sum = 0;
   for(int i = 0; i < n; i++){
     for( int j = 0; j < n; j++){
       sum = sum + 1;

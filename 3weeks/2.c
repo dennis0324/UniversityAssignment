@@ -59,5 +59,5 @@ int main(){
     break;
   }
   result = (float)(end - start) / CLOCKS_PER_SEC; //단위가 ms이기 때문에 s로 바꿔주기 위해 정의되어 있는 상우인 CLOCK PER SEC으로 나눈다.
-  printf("걸린 시간: %f",result);
+  printf("걸린 시간: %f\n",result);
 }
