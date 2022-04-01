@@ -1,3 +1,4 @@
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class CardGame {
@@ -32,9 +33,10 @@ public class CardGame {
                 System.out.println(low + "-" + high);
                 System.out.print((count + 1)+ "번째 >>");
                 try{
-                    guessNum = Integer.parseInt(scanner.next()); //정수만을 받기 위한 try문
+                    guessNum = scanner.nextInt(); //정수만을 받기 위한 try문
                 }
-                catch(NumberFormatException e){
+                catch(InputMismatchException e){
+                    scanner.nextLine();
                     System.out.println("1-100의 정수를 입력해주세요"); //정수가 아닐 경우 출력
                     continue;
                 }
