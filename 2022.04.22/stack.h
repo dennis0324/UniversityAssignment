@@ -22,7 +22,7 @@ int is_empty(stack_t * stack){
 }
 void push(stack_t * stack, int val){
     if(is_full(stack)){
-        fprintf(stderr,"out of index");
+        fprintf(stderr,"stack is full");
         exit(1);
     }
     stack -> arr[++(stack->top)] = val;
@@ -30,8 +30,16 @@ void push(stack_t * stack, int val){
 
 int pop(stack_t * stack){
     if(is_empty(stack)){
-        fprintf(stderr,"stack empty!");
+        fprintf(stderr,"stack is empty");
         exit(1);
     }
     return stack->arr[(stack->top)--];
+}
+
+int peek(stack_t * stack){
+    if(is_empty(stack)){
+        fprintf(stderr,"stack is empty");
+        exit(1);
+    }
+    return stack->arr[(stack->top)];
 }

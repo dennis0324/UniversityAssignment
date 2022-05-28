@@ -53,10 +53,10 @@ int main(){
     printf("수식: ");
     gets(line,100); //string으로 전부를 읽는다.``
     if(check_matching(line)){
-        printf("true");
+        printf("\ntrue\n");
     }
     else
-        printf("false");
+        printf("\nfalse\n");
 
     return 0;
 }
